@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "115920730347",
+    "firebase_url": "https://petmedical-9a2b0.firebaseio.com",
+    "project_id": "petmedical-9a2b0",
+    "storage_bucket": "petmedical-9a2b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115920730347:android:92cac7d51b3e960fa5e6ae",
+        "android_client_info": {
+          "package_name": "com.raywenderlich.pet_medical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115920730347-ms40soe6us522roeod0a5sqek9hufvrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArkl3-epKbqZ_8BlGWzreLXAo5_P_s6ho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115920730347-ms40soe6us522roeod0a5sqek9hufvrr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "115920730347-9v79o88lsbreasvq65g6k2g21g6pu7np.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.raywenderlich.petmedical"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
