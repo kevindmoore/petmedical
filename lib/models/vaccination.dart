@@ -10,16 +10,16 @@ class Vaccination {
 
   Vaccination(this.vaccination, {this.date, this.done, this.reference});
 
-  factory Vaccination.fromJson(Map<dynamic, dynamic> json) => _$VaccinationFromJson(json);
+  factory Vaccination.fromJson(Map<dynamic, dynamic> json) => _VaccinationFromJson(json);
 
-  Map<String, dynamic> toJson() => _$VaccinationToJson(this);
+  Map<String, dynamic> toJson() => _VaccinationToJson(this);
 
   @override
   String toString() => "Vaccination<$vaccination>";
 
 }
 
-Vaccination _$VaccinationFromJson(Map<dynamic, dynamic> json) {
+Vaccination _VaccinationFromJson(Map<dynamic, dynamic> json) {
   return Vaccination(
     json['vaccination'] as String,
     date: json['date'] == null ? null : (json['date'] as Timestamp).toDate(),
@@ -27,7 +27,7 @@ Vaccination _$VaccinationFromJson(Map<dynamic, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$VaccinationToJson(Vaccination instance) =>
+Map<String, dynamic> _VaccinationToJson(Vaccination instance) =>
     <String, dynamic> {
       'vaccination': instance.vaccination,
       'date': instance.date,

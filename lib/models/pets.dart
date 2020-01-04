@@ -18,15 +18,15 @@ class Pet {
     return newPet;
   }
 
-  factory Pet.fromJson(Map<String, dynamic> json) => _$PetFromJson(json);
+  factory Pet.fromJson(Map<String, dynamic> json) => _PetFromJson(json);
 
-  Map<String, dynamic> toJson() => _$PetToJson(this);
+  Map<String, dynamic> toJson() => _PetToJson(this);
 
   @override
   String toString() => "Pet<$name>";
 }
 
-Pet _$PetFromJson(Map<String, dynamic> json) {
+Pet _PetFromJson(Map<String, dynamic> json) {
   return Pet(
     json['name'] as String,
     notes: json['notes'] as String,
@@ -46,7 +46,7 @@ List<Vaccination> _convertVaccinations(List vaccinationMap) {
   return vaccinations;
 }
 
-Map<String, dynamic> _$PetToJson(Pet instance) => <String, dynamic> {
+Map<String, dynamic> _PetToJson(Pet instance) => <String, dynamic> {
       'name': instance.name,
       'notes': instance.notes,
       'type': instance.type,
